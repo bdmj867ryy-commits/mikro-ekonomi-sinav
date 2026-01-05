@@ -2,13 +2,13 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Mikro Ekonomi Final Deneme</title>
+<title>Mikro Ekonomi Final</title>
 <style>
-body { font-family: Arial; margin: 30px; }
-.question { margin-bottom: 25px; }
+body { font-family: Arial; margin: 25px; }
+.question { margin-bottom: 25px; padding: 15px; border: 1px solid #ccc; }
 .correct { color: green; font-weight: bold; }
 .wrong { color: red; font-weight: bold; }
-#timer { font-size: 20px; color: darkred; margin-bottom: 20px; }
+#timer { font-size: 22px; color: darkred; margin-bottom: 20px; }
 </style>
 </head>
 <body>
@@ -17,23 +17,392 @@ body { font-family: Arial; margin: 30px; }
 <div id="timer">Kalan Süre: 30:00</div>
 
 <div class="question" data-answer="D">
-<p>1) İktisadi anlamda piyasadaki firmaların çıkmasına ya da girmesine neden olmayan büyüklük nedir?</p>
+<p>1) İktisadi anlamda firmaların piyasadan çıkmasına ya da girmesine neden olmayan büyüklük nedir?</p>
 <label><input type="radio" name="q1" value="A"> Toplam maliyet</label><br>
 <label><input type="radio" name="q1" value="B"> Sabit kur</label><br>
-<label><input type="radio" name="q1" value="C"> Negatif gelecek belirtisi</label><br>
-<label><input type="radio" name="q1" value="D"> Normal kar</label><br>
+<label><input type="radio" name="q1" value="C"> Negatif gelecek beklentisi</label><br>
+<label><input type="radio" name="q1" value="D"> Normal kâr</label><br>
 <label><input type="radio" name="q1" value="E"> Ortalama gelir</label>
 <div class="feedback"></div>
 </div>
 
+<div class="question" data-answer="A">
+<p>2) Firmanın sattığı son birim maldan elde ettiği gelire ne ad verilir?</p>
+<label><input type="radio" name="q2" value="A"> Marjinal hasılat</label><br>
+<label><input type="radio" name="q2" value="B"> Marjinal tasarruf</label><br>
+<label><input type="radio" name="q2" value="C"> Ortalama hasılat</label><br>
+<label><input type="radio" name="q2" value="D"> Ortalama maliyet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="D">
+<p>3) Tam rekabet piyasasında fiyat hangi maliyetin minimumuna eşitse firma üretime devam eder?</p>
+<label><input type="radio" name="q3" value="A"> Ortalama maliyet</label><br>
+<label><input type="radio" name="q3" value="B"> Marjinal maliyet</label><br>
+<label><input type="radio" name="q3" value="C"> Ortalama sabit maliyet</label><br>
+<label><input type="radio" name="q3" value="D"> Ortalama değişken maliyet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="D">
+<p>4) Tam rekabet piyasası için hangisi doğrudur?</p>
+<label><input type="radio" name="q4" value="A"> Her firma fiyat belirler</label><br>
+<label><input type="radio" name="q4" value="B"> Farklılaştırılmış ürün</label><br>
+<label><input type="radio" name="q4" value="C"> Az sayıda firma</label><br>
+<label><input type="radio" name="q4" value="D"> Piyasaya giriş çıkış serbesttir</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="D">
+<p>5) Bir birim çıktı başına düşen toplam sabit maliyete ne ad verilir?</p>
+<label><input type="radio" name="q5" value="A"> Muhasebe kârı</label><br>
+<label><input type="radio" name="q5" value="B"> Ortalama değişken maliyet</label><br>
+<label><input type="radio" name="q5" value="C"> Örtük maliyet</label><br>
+<label><input type="radio" name="q5" value="D"> Ortalama sabit maliyet</label><br>
+<label><input type="radio" name="q5" value="E"> Marjinal maliyet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>6) Talep eğrisi aynı zamanda piyasa fiyatına eşit olan piyasa hangisidir?</p>
+<label><input type="radio" name="q6" value="A"> Monopol</label><br>
+<label><input type="radio" name="q6" value="B"> Tam rekabet</label><br>
+<label><input type="radio" name="q6" value="C"> Oligopol</label><br>
+<label><input type="radio" name="q6" value="D"> Monopolcü rekabet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="D">
+<p>7) Refah ve etkinlik açısından en ideal piyasa hangisidir?</p>
+<label><input type="radio" name="q7" value="A"> Oligopol</label><br>
+<label><input type="radio" name="q7" value="B"> Monopson</label><br>
+<label><input type="radio" name="q7" value="C"> Monopolcü rekabet</label><br>
+<label><input type="radio" name="q7" value="D"> Tam rekabet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="A">
+<p>8) Tüketicilerin bilgiye bedelsiz ulaşabilmesi hangi özelliktir?</p>
+<label><input type="radio" name="q8" value="A"> Açıklık</label><br>
+<label><input type="radio" name="q8" value="B"> Atomisite</label><br>
+<label><input type="radio" name="q8" value="C"> Mobilite</label><br>
+<label><input type="radio" name="q8" value="D"> Homojenlik</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="E">
+<p>9) Aynı mala farklı fiyat uygulanmasına ne ad verilir?</p>
+<label><input type="radio" name="q9" value="A"> Arbitraj</label><br>
+<label><input type="radio" name="q9" value="B"> Senyoraj</label><br>
+<label><input type="radio" name="q9" value="C"> Optimal fiyat</label><br>
+<label><input type="radio" name="q9" value="D"> Tek fiyat</label><br>
+<label><input type="radio" name="q9" value="E"> Fiyat farklılaştırması</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="C">
+<p>10) Monopolcü rekabet piyasasında kullanılmayan kapasite neye yol açar?</p>
+<label><input type="radio" name="q10" value="A"> Denge</label><br>
+<label><input type="radio" name="q10" value="B"> Refah artışı</label><br>
+<label><input type="radio" name="q10" value="C"> Etkinsizlik</label><br>
+<label><input type="radio" name="q10" value="D"> Tam etkinlik</label>
+<div class="feedback"></div>
+</div>
+
+  <div class="question" data-answer="A">
+<p>16) Y malı üretimindeki girdilerin X malı üretimine aktarılmasıyla ekonomide etkin dönüşümü gösteren kavram nedir?</p>
+<label><input type="radio" name="q16" value="A"> Marjinal dönüşüm oranı</label><br>
+<label><input type="radio" name="q16" value="B"> Anlaşma eğrisi</label><br>
+<label><input type="radio" name="q16" value="C"> Edgeworth kutusu</label><br>
+<label><input type="radio" name="q16" value="D"> Bütçe doğrusu</label><br>
+<label><input type="radio" name="q16" value="E"> Farksızlık eğrisi</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="A">
+<p>17) Bir fabrikanın atıklarının nehre bırakılması sonucu tarımın zarar görmesi neye örnektir?</p>
+<label><input type="radio" name="q17" value="A"> Dışsallık</label><br>
+<label><input type="radio" name="q17" value="B"> Kamusal mal</label><br>
+<label><input type="radio" name="q17" value="C"> Serbest mal</label><br>
+<label><input type="radio" name="q17" value="D"> Arbitraj</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="A">
+<p>18) Sermaye kullanımı karşılığında elde edilen gelire ne ad verilir?</p>
+<label><input type="radio" name="q18" value="A"> Faiz</label><br>
+<label><input type="radio" name="q18" value="B"> Ücret</label><br>
+<label><input type="radio" name="q18" value="C"> Rant</label><br>
+<label><input type="radio" name="q18" value="D"> Kâr</label><br>
+<label><input type="radio" name="q18" value="E"> Gelir</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="C">
+<p>19) Bütçe doğrusu üzerindeki herhangi bir nokta neyi ifade eder?</p>
+<label><input type="radio" name="q19" value="A"> Gelirin altında harcama</label><br>
+<label><input type="radio" name="q19" value="B"> Tasarruf fazlası</label><br>
+<label><input type="radio" name="q19" value="C"> Tüm gelirin harcanması</label><br>
+<label><input type="radio" name="q19" value="D"> Hiç mal tüketilmemesi</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="E">
+<p>20) Toplam fayda fonksiyonunun eğimi neyi gösterir?</p>
+<label><input type="radio" name="q20" value="A"> Ortalama maliyet</label><br>
+<label><input type="radio" name="q20" value="B"> Ortalama tasarruf</label><br>
+<label><input type="radio" name="q20" value="C"> Arbitraj oranı</label><br>
+<label><input type="radio" name="q20" value="D"> İkame oranı</label><br>
+<label><input type="radio" name="q20" value="E"> Marjinal fayda</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>21) Üretimde miktarı değiştirilemeyen girdiye ne ad verilir?</p>
+<label><input type="radio" name="q21" value="A"> Marjinal girdi</label><br>
+<label><input type="radio" name="q21" value="B"> Sabit girdi</label><br>
+<label><input type="radio" name="q21" value="C"> Değişken girdi</label><br>
+<label><input type="radio" name="q21" value="D"> Bütüncül girdi</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="E">
+<p>22) Teknoloji veri iken maksimum çıktıyı gösteren fonksiyon nedir?</p>
+<label><input type="radio" name="q22" value="A"> Maliyet fonksiyonu</label><br>
+<label><input type="radio" name="q22" value="B"> Talep fonksiyonu</label><br>
+<label><input type="radio" name="q22" value="C"> Tüketim fonksiyonu</label><br>
+<label><input type="radio" name="q22" value="D"> Fayda fonksiyonu</label><br>
+<label><input type="radio" name="q22" value="E"> Üretim fonksiyonu</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>23) Birim çıktı başına düşen değişken maliyet nedir?</p>
+<label><input type="radio" name="q23" value="A"> Marjinal maliyet</label><br>
+<label><input type="radio" name="q23" value="B"> Ortalama değişken maliyet</label><br>
+<label><input type="radio" name="q23" value="C"> Toplam maliyet</label><br>
+<label><input type="radio" name="q23" value="D"> Sabit maliyet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="A">
+<p>24) Tam rekabet piyasasında fiyat kontrolünün olmamasının nedeni nedir?</p>
+<label><input type="radio" name="q24" value="A"> Alıcı ve satıcıların çokluğu</label><br>
+<label><input type="radio" name="q24" value="B"> Devlet müdahalesi</label><br>
+<label><input type="radio" name="q24" value="C"> Ürün farklılaştırması</label><br>
+<label><input type="radio" name="q24" value="D"> Giriş engelleri</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="C">
+<p>25) Monopolcü firma ile endüstrinin özdeş olmasının nedeni nedir?</p>
+<label><input type="radio" name="q25" value="A"> Devlet müdahalesi</label><br>
+<label><input type="radio" name="q25" value="B"> Küçük piyasa</label><br>
+<label><input type="radio" name="q25" value="C"> Tek firmanın olması</label><br>
+<label><input type="radio" name="q25" value="D"> Düşük mal olması</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>26) Girdilerin birbirinin yerine ikame edilebilme derecesini ölçen esneklik hangisidir?</p>
+<label><input type="radio" name="q26" value="A"> Fiyat esnekliği</label><br>
+<label><input type="radio" name="q26" value="B"> İkame esnekliği</label><br>
+<label><input type="radio" name="q26" value="C"> Gelir esnekliği</label><br>
+<label><input type="radio" name="q26" value="D"> Arz esnekliği</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>27) Firmanın sattığı son birim maldan elde ettiği gelir nedir?</p>
+<label><input type="radio" name="q27" value="A"> Ortalama hasılat</label><br>
+<label><input type="radio" name="q27" value="B"> Marjinal hasılat</label><br>
+<label><input type="radio" name="q27" value="C"> Marjinal tasarruf</label><br>
+<label><input type="radio" name="q27" value="D"> Esnek hasılat</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="D">
+<p>28) Tam rekabette kısa dönem arz eğrisi hangi eğrinin bir parçasıdır?</p>
+<label><input type="radio" name="q28" value="A"> Talep</label><br>
+<label><input type="radio" name="q28" value="B"> Ortalama hasılat</label><br>
+<label><input type="radio" name="q28" value="C"> Toplam hasılat</label><br>
+<label><input type="radio" name="q28" value="D"> Marjinal maliyet</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>29) Monopolcünün farklı miktarlara farklı fiyat uygulaması hangi fiyat farklılaştırmasıdır?</p>
+<label><input type="radio" name="q29" value="A"> Birinci derece</label><br>
+<label><input type="radio" name="q29" value="B"> İkinci derece</label><br>
+<label><input type="radio" name="q29" value="C"> Üçüncü derece</label><br>
+<label><input type="radio" name="q29" value="D"> Tek fiyat</label>
+<div class="feedback"></div>
+</div>
+
+<div class="question" data-answer="B">
+<p>30) Gelir arttıkça talebi azalan mallara ne ad verilir?</p>
+<label><input type="radio" name="q30" value="A"> Normal mal</label><br>
+<label><input type="radio" name="q30" value="B"> Düşük mal</label><br>
+<label><input type="radio" name="q30" value="C"> Serbest mal</label><br>
+<label><input type="radio" name="q30" value="D"> Optimal mal</label>
+<div class="feedback"></div>
+</div>
+
+  <!-- ================== 31–50 ================== -->
+
+<div class="question" data-answer="B">
+<p><strong>31)</strong> Ham madde ve emek gibi üretimle birlikte kullanılan girdiler için yapılan harcamalar firmanın hangi maliyetlerini oluşturur?</p>
+<label><input type="radio" name="q31" value="A"> Sabit maliyet</label>
+<label><input type="radio" name="q31" value="B"> Değişken maliyet</label>
+<label><input type="radio" name="q31" value="C"> Ortalama maliyet</label>
+<label><input type="radio" name="q31" value="D"> Marjinal maliyet</label>
+</div>
+
+<div class="question" data-answer="C">
+<p><strong>32)</strong> Alıcı ve satıcıların etkileşimini sağlayan mekanizma nedir?</p>
+<label><input type="radio" name="q32" value="A"> Tüketim</label>
+<label><input type="radio" name="q32" value="B"> Bölüşüm</label>
+<label><input type="radio" name="q32" value="C"> Piyasa</label>
+<label><input type="radio" name="q32" value="D"> Üretim</label>
+<label><input type="radio" name="q32" value="E"> Denge</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>33)</strong> Monopolcü firmanın uzun dönemde de aşırı kâr elde edebilmesinin temel nedeni nedir?</p>
+<label><input type="radio" name="q33" value="A"> Piyasaya giriş engelleri</label>
+<label><input type="radio" name="q33" value="B"> Talep fazlalığı</label>
+<label><input type="radio" name="q33" value="C"> Reklam</label>
+<label><input type="radio" name="q33" value="D"> Düşük maliyet</label>
+</div>
+
+<div class="question" data-answer="D">
+<p><strong>34)</strong> Tam rekabette firma normal kâr elde ettiğinde fiyat neye eşittir?</p>
+<label><input type="radio" name="q34" value="A"> Marjinal dönüşüm oranı</label>
+<label><input type="radio" name="q34" value="B"> Talep</label>
+<label><input type="radio" name="q34" value="C"> Marjinal ikame oranı</label>
+<label><input type="radio" name="q34" value="D"> Ortalama maliyet</label>
+</div>
+
+<div class="question" data-answer="B">
+<p><strong>35)</strong> Tam rekabet piyasasında firmanın talep eğrisinin sonsuz esnek olmasının nedeni nedir?</p>
+<label><input type="radio" name="q35" value="A"> Ürün farklılaştırması</label>
+<label><input type="radio" name="q35" value="B"> Firmaların fiyat kabullenici olması</label>
+</div>
+
+<div class="question" data-answer="B">
+<p><strong>36)</strong> Çok sayıda firmanın benzer fakat farklılaştırılmış mallar ürettiği piyasa türü?</p>
+<label><input type="radio" name="q36" value="A"> Monopol</label>
+<label><input type="radio" name="q36" value="B"> Monopolcü rekabet</label>
+<label><input type="radio" name="q36" value="C"> Duopol</label>
+<label><input type="radio" name="q36" value="D"> Tam rekabet</label>
+<label><input type="radio" name="q36" value="E"> Oligopol</label>
+</div>
+
+<div class="question" data-answer="C">
+<p><strong>37)</strong> Tam rekabette toplam hasılat ile toplam maliyetin kesiştiği nokta nedir?</p>
+<label><input type="radio" name="q37" value="A"> Optimum</label>
+<label><input type="radio" name="q37" value="B"> Denge</label>
+<label><input type="radio" name="q37" value="C"> Başa baş noktası</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>38)</strong> Tam rekabet piyasasında refahın maksimize edilmesinin nedeni nedir?</p>
+<label><input type="radio" name="q38" value="A"> Fiyatın marjinal maliyete eşit olması</label>
+<label><input type="radio" name="q38" value="B"> Talep fazlalığı</label>
+</div>
+
+<div class="question" data-answer="B">
+<p><strong>39)</strong> Başka malları üretmek için kullanılan mallara ne ad verilir?</p>
+<label><input type="radio" name="q39" value="A"> Tüketim malı</label>
+<label><input type="radio" name="q39" value="B"> Sermaye malı</label>
+</div>
+
+<div class="question" data-answer="E">
+<p><strong>40)</strong> Bütçe doğrusunun eğimi değişir ve yeni doğru eskisiyle kesişirse hangi durum oluşmuştur?</p>
+<label><input type="radio" name="q40" value="A"> Y malı fiyatı artar</label>
+<label><input type="radio" name="q40" value="B"> İki malın fiyatı artar</label>
+<label><input type="radio" name="q40" value="C"> İki malın fiyatı azalır</label>
+<label><input type="radio" name="q40" value="E"> X malı fiyatı azalır</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>41)</strong> Üretim sıfır olsa bile katlanılan maliyet hangisidir?</p>
+<label><input type="radio" name="q41" value="A"> Toplam sabit maliyet</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>42)</strong> Her tüketiciye farklı fiyat uygulanması hangi fiyat farklılaştırmasıdır?</p>
+<label><input type="radio" name="q42" value="A"> Birinci derece</label>
+<label><input type="radio" name="q42" value="B"> İkinci derece</label>
+<label><input type="radio" name="q42" value="C"> Üçüncü derece</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>43)</strong> Alıcı ve satıcı sayısının çokluğu hangi özelliktir?</p>
+<label><input type="radio" name="q43" value="A"> Atomisite</label>
+</div>
+
+<div class="question" data-answer="D">
+<p><strong>44)</strong> Hangisi tam rekabet varsayımı değildir?</p>
+<label><input type="radio" name="q44" value="A"> Serbest giriş çıkış</label>
+<label><input type="radio" name="q44" value="B"> Tam bilgi</label>
+<label><input type="radio" name="q44" value="C"> Devlet müdahalesi olmaması</label>
+<label><input type="radio" name="q44" value="D"> Üretim faktörlerinin hareketsiz olması</label>
+</div>
+
+<div class="question" data-answer="E">
+<p><strong>45)</strong> Tam rekabete en uygun örnek?</p>
+<label><input type="radio" name="q45" value="A"> Otomobil</label>
+<label><input type="radio" name="q45" value="B"> Sigara</label>
+<label><input type="radio" name="q45" value="C"> Gazete</label>
+<label><input type="radio" name="q45" value="D"> Deterjan</label>
+<label><input type="radio" name="q45" value="E"> Buğday</label>
+</div>
+
+<div class="question" data-answer="C">
+<p><strong>46)</strong> Tam rekabette firma neden fiyat düşürmez?</p>
+<label><input type="radio" name="q46" value="A"> Büyük firmalardan korkar</label>
+<label><input type="radio" name="q46" value="B"> Gelir dağılımı bozulur</label>
+<label><input type="radio" name="q46" value="C"> Piyasa fiyatından istediği kadar satabilir</label>
+<label><input type="radio" name="q46" value="D"> Reklam yapamaz</label>
+</div>
+
+<div class="question" data-answer="C">
+<p><strong>47)</strong> Kadınlara ve erkeklere farklı bilet fiyatı hangi fiyat farklılaştırmasıdır?</p>
+<label><input type="radio" name="q47" value="A"> Birinci derece</label>
+<label><input type="radio" name="q47" value="B"> İkinci derece</label>
+<label><input type="radio" name="q47" value="C"> Üçüncü derece</label>
+</div>
+
+<div class="question" data-answer="B">
+<p><strong>48)</strong> Monopolcü rekabet modelini kimler geliştirdi?</p>
+<label><input type="radio" name="q48" value="A"> Keynes</label>
+<label><input type="radio" name="q48" value="B"> Robinson – Chamberlin</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>49)</strong> OPEC hangi piyasa modeliyle açıklanır?</p>
+<label><input type="radio" name="q49" value="A"> Kartel</label>
+</div>
+
+<div class="question" data-answer="A">
+<p><strong>50)</strong> Mahkumlar açmazının temel varsayımı nedir?</p>
+<label><input type="radio" name="q50" value="A"> Oyuncular arasında anlaşma yoktur</label>
+<label><input type="radio" name="q50" value="B"> Her zaman optimal sonuç olur</label>
+<label><input type="radio" name="q50" value="C"> Oyuncular iş birliği içindedir</label>
+<label><input type="radio" name="q50" value="D"> Bilgi tamdır</label>
+</div>
+
+<!-- ============== BİTTİ 31–50 ============== -->
+
 <script>
 let time = 1800;
-const timerEl = document.getElementById("timer");
+const timer = document.getElementById("timer");
 
 setInterval(() => {
   let m = Math.floor(time / 60);
   let s = time % 60;
-  timerEl.textContent = `Kalan Süre: ${m}:${s.toString().padStart(2,"0")}`;
+  timer.textContent = `Kalan Süre: ${m}:${s.toString().padStart(2,"0")}`;
   time--;
 }, 1000);
 
@@ -44,7 +413,7 @@ document.querySelectorAll("input").forEach(r => {
     if(this.value === q.dataset.answer){
       f.innerHTML = "<span class='correct'>✔ Doğru</span>";
     } else {
-      f.innerHTML = "<span class='wrong'>✘ Yanlış</span> (Doğru: "+q.dataset.answer+")";
+      f.innerHTML = "<span class='wrong'>✘ Yanlış</span> (Doğru: " + q.dataset.answer + ")";
     }
   });
 });
