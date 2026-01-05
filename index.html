@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Mikro Ekonomi Final Deneme</title>
+<style>
+body { font-family: Arial; margin: 30px; }
+.question { margin-bottom: 25px; }
+.correct { color: green; font-weight: bold; }
+.wrong { color: red; font-weight: bold; }
+#timer { font-size: 20px; color: darkred; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Mikro Ekonomi Final Deneme Sınavı</h1>
+<div id="timer">Kalan Süre: 30:00</div>
+
+<div class="question" data-answer="D">
+<p>1) İktisadi anlamda piyasadaki firmaların çıkmasına ya da girmesine neden olmayan büyüklük nedir?</p>
+<label><input type="radio" name="q1" value="A"> Toplam maliyet</label><br>
+<label><input type="radio" name="q1" value="B"> Sabit kur</label><br>
+<label><input type="radio" name="q1" value="C"> Negatif gelecek belirtisi</label><br>
+<label><input type="radio" name="q1" value="D"> Normal kar</label><br>
+<label><input type="radio" name="q1" value="E"> Ortalama gelir</label>
+<div class="feedback"></div>
+</div>
+
+<script>
+let time = 1800;
+const timerEl = document.getElementById("timer");
+
+setInterval(() => {
+  let m = Math.floor(time / 60);
+  let s = time % 60;
+  timerEl.textContent = `Kalan Süre: ${m}:${s.toString().padStart(2,"0")}`;
+  time--;
+}, 1000);
+
+document.querySelectorAll("input").forEach(r => {
+  r.addEventListener("change", function(){
+    const q = this.closest(".question");
+    const f = q.querySelector(".feedback");
+    if(this.value === q.dataset.answer){
+      f.innerHTML = "<span class='correct'>✔ Doğru</span>";
+    } else {
+      f.innerHTML = "<span class='wrong'>✘ Yanlış</span> (Doğru: "+q.dataset.answer+")";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
 
